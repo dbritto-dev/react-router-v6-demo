@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import { BreadcrumbItem } from "~/components/breadcrumb-item";
-import { SmallSpinnit } from "~/components/small-spinnit";
+import { BreadcrumbItem } from "components/breadcrumb-item";
+import { SmallSpinnit } from "components/small-spinnit";
 
 export default function Layout() {
   return (

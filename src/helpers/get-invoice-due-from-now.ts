@@ -1,4 +1,4 @@
-import { Invoice } from "~/models/invoices";
+import { Invoice } from "models/invoices";
 import { asUTC } from "./as-utc";
 
 export function getInvoiceDueFromNow(invoice: Invoice) {

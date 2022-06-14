@@ -1,4 +1,4 @@
-import { Invoice, DueStatus } from "~/models/invoices";
+import { Invoice, DueStatus } from "models/invoices";
 import { asUTC } from "./as-utc";
 
 export const getInvoiceDueStatus = (invoice: Invoice): DueStatus => {

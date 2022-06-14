@@ -1,24 +1,24 @@
 import { lazy } from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
-import { SmallSpinnit } from "~/components/small-spinnit";
+import { SmallSpinnit } from "components/small-spinnit";
 
-const Dashboard = lazy(() => import("~/routes/dashboard"));
-const Accounts = lazy(() => import("~/routes/accounts"));
-const Expenses = lazy(() => import("~/routes/expenses"));
-const Reports = lazy(() => import("~/routes/reports"));
-const Sales = lazy(() => import("~/routes/sales"));
-const SalesLayout = lazy(() => import("~/routes/sales/_layout"));
-const SalesCustomers = lazy(() => import("~/routes/sales/customers"));
-const SalesDeposits = lazy(() => import("~/routes/sales/deposits"));
-const SalesSubscriptions = lazy(() => import("~/routes/sales/subscriptions"));
-const SalesInvoices = lazy(() => import("~/routes/sales/invoices"));
+const Dashboard = lazy(() => import("routes/dashboard"));
+const Accounts = lazy(() => import("routes/accounts"));
+const Expenses = lazy(() => import("routes/expenses"));
+const Reports = lazy(() => import("routes/reports"));
+const Sales = lazy(() => import("routes/sales"));
+const SalesLayout = lazy(() => import("routes/sales/_layout"));
+const SalesCustomers = lazy(() => import("routes/sales/customers"));
+const SalesDeposits = lazy(() => import("routes/sales/deposits"));
+const SalesSubscriptions = lazy(() => import("routes/sales/subscriptions"));
+const SalesInvoices = lazy(() => import("routes/sales/invoices"));
 const SalesInvoicesLayout = lazy(() =>
-  import("~/routes/sales/invoices/_layout")
+  import("routes/sales/invoices/_layout")
 );
 const SalesInvoicesDetail = lazy(() =>
-  import("~/routes/sales/invoices/detail")
+  import("routes/sales/invoices/detail")
 );
-const Home = lazy(() => import("~/routes/home"));
+const Home = lazy(() => import("routes/home"));
 
 function SmallSpinnitLayoutRoute() {
   return (

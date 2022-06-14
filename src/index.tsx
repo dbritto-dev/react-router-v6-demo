@@ -3,7 +3,8 @@ import { createRoot } from "react-dom/client";
 import { QueryClientProvider, QueryClient } from "react-query";
 import { ReactQueryDevtools as QueryDevTools } from "react-query/devtools";
 import { BrowserRouter } from "react-router-dom";
-import App from "~/app";
+import App from "./app";
+import "./index.css";
 
 const queryClient = new QueryClient();
 const root = createRoot(document.getElementById("root") as never);

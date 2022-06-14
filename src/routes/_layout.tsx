@@ -1,9 +1,9 @@
 import { ReactNode, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useQueryClient } from "react-query";
-import { NavItem } from "~/components/nav-item";
-import { FakebooksLogo } from "~/components/fakebooks-logo";
-import { invoicesFetcher } from "~/helpers/invoices-fetcher";
+import { NavItem } from "components/nav-item";
+import { FakebooksLogo } from "components/fakebooks-logo";
+import { invoicesFetcher } from "helpers/invoices-fetcher";
 
 export function Layout({ children }: { children?: ReactNode }) {
   const queryClient = useQueryClient();

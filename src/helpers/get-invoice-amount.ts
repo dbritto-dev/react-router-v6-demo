@@ -1,4 +1,4 @@
-import { Invoice } from "~/models/invoices";
+import { Invoice } from "models/invoices";
 import { getInvoiceLineItemAmount } from "./get-invoice-line-item-amount";
 
 export const getInvoiceAmount = (invoice: Invoice): number => {

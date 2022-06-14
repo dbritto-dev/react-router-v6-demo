@@ -1,15 +1,15 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { useQuery } from "react-query";
-import { LabelText } from "~/components/label-text";
-import { SmallSpinnit } from "~/components/small-spinnit";
-import { invoicesFetcher } from "~/helpers/invoices-fetcher";
-import { getInvoiceDueStatus } from "~/helpers/get-invoice-due-status";
-import { getInvoiceTotal } from "~/helpers/get-invoice-total";
+import { LabelText } from "components/label-text";
+import { SmallSpinnit } from "components/small-spinnit";
+import { invoicesFetcher } from "helpers/invoices-fetcher";
+import { getInvoiceDueStatus } from "helpers/get-invoice-due-status";
+import { getInvoiceTotal } from "helpers/get-invoice-total";
 
 function InvoicesInfo({
   label,
   amount,
-  right
+  right,
 }: {
   label: string;
   amount: number;
@@ -27,8 +27,10 @@ function InvoicesInfo({
 
 function InvoiceList({ children }: { children: React.ReactNode }) {
   const { data: invoiceListItems } = useQuery("invoices", invoicesFetcher, {
-    suspense: true
+    suspense: true,
   });
+
+  if (invoiceListItems === undefined) return null;
 
   return (
     <div className="flex rounded-lg border border-gray-100">
@@ -73,7 +75,7 @@ function InvoiceList({ children }: { children: React.ReactNode }) {
 
 export default function Layout() {
   const { data: invoiceListItems } = useQuery("invoices", invoicesFetcher, {
-    suspense: true
+    suspense: true,
   });
 
   if (invoiceListItems === undefined) return null;

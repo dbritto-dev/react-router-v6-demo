@@ -1,1 +1,1 @@
-export * from "~/_navigation.lazy-imports";
+export * from "./_navigation.lazy-imports";

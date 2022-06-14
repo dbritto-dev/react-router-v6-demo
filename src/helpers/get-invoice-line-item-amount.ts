@@ -1,4 +1,4 @@
-import { InvoiceLineItem } from "~/models/invoices";
+import { InvoiceLineItem } from "models/invoices";
 
 export const getInvoiceLineItemAmount = (
   invoiceLineItem: InvoiceLineItem
