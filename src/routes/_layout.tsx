@@ -9,7 +9,10 @@ export function Layout({ children }: { children?: ReactNode }) {
   const queryClient = useQueryClient();
 
   useEffect(() => {
-    queryClient.prefetchQuery("invoices", invoicesFetcher);
+    const prefetchInvoices = async () =>
+      void (await queryClient.prefetchQuery("invoices", invoicesFetcher));
+
+    prefetchInvoices();
   }, [queryClient]);
 
   return (
