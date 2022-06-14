@@ -1,10 +1,11 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { useQuery } from "react-query";
+import { useQuery, useQueryClient } from "react-query";
 import { LabelText } from "components/label-text";
 import { SmallSpinnit } from "components/small-spinnit";
 import { invoicesFetcher } from "helpers/invoices-fetcher";
 import { getInvoiceDueStatus } from "helpers/get-invoice-due-status";
 import { getInvoiceTotal } from "helpers/get-invoice-total";
+import { invoiceFetcher } from "helpers/invoice-fetcher";
 
 function InvoicesInfo({
   label,
@@ -26,6 +27,7 @@ function InvoicesInfo({
 }
 
 function InvoiceList({ children }: { children: React.ReactNode }) {
+  const queryClient = useQueryClient();
   const { data: invoiceListItems } = useQuery("invoices", invoicesFetcher, {
     suspense: true,
   });
@@ -39,6 +41,13 @@ function InvoiceList({ children }: { children: React.ReactNode }) {
           <NavLink
             key={index}
             to={invoice.id}
+            onMouseEnter={async () =>
+              void (await queryClient.prefetchQuery(
+                ["invoice", invoice.id],
+                invoiceFetcher(invoice.id),
+                { staleTime: 1000 * 2 }
+              ))
+            }
             className={({ isActive }) =>
               "block border-b border-gray-50 py-3 px-4 hover:bg-gray-50" +
               " " +
