@@ -1,0 +1,104 @@
+[
+  {
+    "id": "bc6909fa-de73-4c9d-bbc6-7ca9e34d87c0",
+    "userId": "9a1189b2-f533-4fa2-8105-3e4f46068b00",
+    "name": "Santa Monica",
+    "number": 1995,
+    "total": 10800,
+    "invoiceDate": "2022-05-31T05:00:00.000Z",
+    "dueDate": "2022-06-12T05:00:00.000Z",
+    "paid": false,
+    "lineItems": [
+      {
+        "id": "43246007-35b4-4e9d-9f28-425fd416023c",
+        "description": "Cat Drawing",
+        "quantity": 1,
+        "unitPrice": 10800.34
+      }
+    ]
+  },
+  {
+    "id": "497633d0-f594-4df7-897e-8c20bd1ae9c7",
+    "userId": "bcec525e-2789-42fa-9b33-2d8ea84fd67b",
+    "name": "Stankonia",
+    "number": 2000,
+    "total": 8000,
+    "invoiceDate": "2022-06-08T05:00:00.000Z",
+    "dueDate": "2022-06-13T05:00:00.000Z",
+    "paid": false,
+    "lineItems": [
+      {
+        "id": "52583510-2708-4f4b-94f4-bef695b5cfd8",
+        "description": "Robbin Drawing",
+        "unitPrice": 6000.23,
+        "quantity": 1
+      },
+      {
+        "id": "27b83423-398e-4108-b3fe-f9f9bd5eca60",
+        "description": "Squirrel Drawing",
+        "unitPrice": 2000.98,
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": "d0fd5b0d-49db-45aa-800d-c0f6d9e39288",
+    "userId": "8ece5284-502d-4bc3-9887-09d72dbf6573",
+    "name": "Ocean Avenue",
+    "number": 2003,
+    "total": 9500,
+    "invoiceDate": "2022-05-28T05:00:00.000Z",
+    "dueDate": "2022-06-10T05:00:00.000Z",
+    "paid": true,
+    "lineItems": [
+      {
+        "id": "4dd3e300-c641-4265-bbfa-531d9eddd68d",
+        "description": "Robbin Drawing",
+        "unitPrice": 6000.23,
+        "quantity": 1
+      },
+      {
+        "id": "2a0ea2a3-ef4d-4a77-8b35-2b975ffe60e5",
+        "description": "Squirrel Drawing",
+        "unitPrice": 2000.98,
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": "10b17ff8-067f-41b1-9da7-7b041f36688e",
+    "userId": "15e2abc7-2dde-408b-8ea4-98ff14bd0b64",
+    "name": "Tubthumper",
+    "number": 1997,
+    "total": 14000,
+    "invoiceDate": "2022-06-11T05:00:00.000Z",
+    "dueDate": "2022-06-23T05:00:00.000Z",
+    "paid": false,
+    "lineItems": [
+      {
+        "id": "88b71b1a-8ce2-4024-a5d5-ff5068326201",
+        "description": "Giraffe Drawing",
+        "quantity": 1,
+        "unitPrice": 14000.4
+      }
+    ]
+  },
+  {
+    "id": "e7e7978c-67b4-40ee-b814-d74ba496a58e",
+    "userId": "8b4317c6-4763-4a13-a99e-d1ede7281873",
+    "name": "Wide Open Spaces",
+    "number": 1998,
+    "total": 4600,
+    "invoiceDate": "2022-06-09T05:00:00.000Z",
+    "dueDate": "2022-06-21T05:00:00.000Z",
+    "paid": false,
+    "lineItems": [
+      {
+        "id": "8bf6d8ea-1518-42e6-a0b7-7338a5a79777",
+        "description": "Elephant Drawing",
+        "quantity": 3,
+        "unitPrice": 4600.65
+      }
+    ]
+  }
+]

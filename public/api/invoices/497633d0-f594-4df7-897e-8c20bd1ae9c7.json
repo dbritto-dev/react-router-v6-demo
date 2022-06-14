@@ -1,0 +1,24 @@
+{
+  "id": "497633d0-f594-4df7-897e-8c20bd1ae9c7",
+  "userId": "bcec525e-2789-42fa-9b33-2d8ea84fd67b",
+  "name": "Stankonia",
+  "number": 2000,
+  "total": 8000,
+  "invoiceDate": "2022-06-08T05:00:00.000Z",
+  "dueDate": "2022-06-13T05:00:00.000Z",
+  "paid": false,
+  "lineItems": [
+    {
+      "id": "52583510-2708-4f4b-94f4-bef695b5cfd8",
+      "description": "Robbin Drawing",
+      "unitPrice": 6000.23,
+      "quantity": 1
+    },
+    {
+      "id": "27b83423-398e-4108-b3fe-f9f9bd5eca60",
+      "description": "Squirrel Drawing",
+      "unitPrice": 2000.98,
+      "quantity": 2
+    }
+  ]
+}

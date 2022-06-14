@@ -1,0 +1,24 @@
+{
+  "id": "d0fd5b0d-49db-45aa-800d-c0f6d9e39288",
+  "userId": "8ece5284-502d-4bc3-9887-09d72dbf6573",
+  "name": "Ocean Avenue",
+  "number": 2003,
+  "total": 9500,
+  "invoiceDate": "2022-05-28T05:00:00.000Z",
+  "dueDate": "2022-06-10T05:00:00.000Z",
+  "paid": true,
+  "lineItems": [
+    {
+      "id": "4dd3e300-c641-4265-bbfa-531d9eddd68d",
+      "description": "Robbin Drawing",
+      "unitPrice": 6000.23,
+      "quantity": 1
+    },
+    {
+      "id": "2a0ea2a3-ef4d-4a77-8b35-2b975ffe60e5",
+      "description": "Squirrel Drawing",
+      "unitPrice": 2000.98,
+      "quantity": 2
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "bc6909fa-de73-4c9d-bbc6-7ca9e34d87c0",
+  "userId": "9a1189b2-f533-4fa2-8105-3e4f46068b00",
+  "name": "Santa Monica",
+  "number": 1995,
+  "total": 10800,
+  "invoiceDate": "2022-05-31T05:00:00.000Z",
+  "dueDate": "2022-06-12T05:00:00.000Z",
+  "paid": false,
+  "lineItems": [
+    {
+      "id": "43246007-35b4-4e9d-9f28-425fd416023c",
+      "description": "Cat Drawing",
+      "quantity": 1,
+      "unitPrice": 10800.34
+    }
+  ]
+}

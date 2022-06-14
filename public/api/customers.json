@@ -1,0 +1,27 @@
+[
+  {
+    "id": "9a1189b2-f533-4fa2-8105-3e4f46068b00",
+    "name": "Santa Monica",
+    "email": "santa@monica.jk"
+  },
+  {
+    "id": "bcec525e-2789-42fa-9b33-2d8ea84fd67b",
+    "name": "Stankonia",
+    "email": "stan@konia.jk"
+  },
+  {
+    "id": "8ece5284-502d-4bc3-9887-09d72dbf6573",
+    "name": "Ocean Avenue",
+    "email": "ocean@avenue.jk"
+  },
+  {
+    "id": "15e2abc7-2dde-408b-8ea4-98ff14bd0b64",
+    "name": "Tubthumper",
+    "email": "tub@thumper.jk"
+  },
+  {
+    "id": "8b4317c6-4763-4a13-a99e-d1ede7281873",
+    "name": "Wide Open Spaces",
+    "email": "wideopen@spaces.jk"
+  }
+]

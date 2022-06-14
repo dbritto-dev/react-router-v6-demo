@@ -1,0 +1,18 @@
+{
+  "id": "10b17ff8-067f-41b1-9da7-7b041f36688e",
+  "userId": "15e2abc7-2dde-408b-8ea4-98ff14bd0b64",
+  "name": "Tubthumper",
+  "number": 1997,
+  "total": 14000,
+  "invoiceDate": "2022-06-11T05:00:00.000Z",
+  "dueDate": "2022-06-23T05:00:00.000Z",
+  "paid": false,
+  "lineItems": [
+    {
+      "id": "88b71b1a-8ce2-4024-a5d5-ff5068326201",
+      "description": "Giraffe Drawing",
+      "quantity": 1,
+      "unitPrice": 14000.4
+    }
+  ]
+}
