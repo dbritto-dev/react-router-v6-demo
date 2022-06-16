@@ -1,11 +1,12 @@
 import { ReactNode, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useQueryClient } from "react-query";
 import { NavItem } from "components/nav-item";
+import { SmallSpinnit } from "components/small-spinnit";
 import { FakebooksLogo } from "components/fakebooks-logo";
 import { invoicesFetcher } from "helpers/invoices-fetcher";
 
-export function Layout({ children }: { children?: ReactNode }) {
+export default function Layout({ children }: { children?: ReactNode }) {
   const queryClient = useQueryClient();
 
   useEffect(() => {
@@ -34,7 +35,11 @@ export function Layout({ children }: { children?: ReactNode }) {
           </div>
         </div>
       </div>
-      <div className="flex-1">{children}</div>
+      <div className="flex-1">
+        <SmallSpinnit>
+          <Outlet />
+        </SmallSpinnit>
+      </div>
     </div>
   );
 }
