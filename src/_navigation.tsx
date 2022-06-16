@@ -1,5 +1,6 @@
-import { Routes, Route, Outlet } from "react-router-dom";
-import { SmallSpinnit } from "components/small-spinnit";
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "routes/_layout";
+import Home from "routes/home";
 import Dashboard from "routes/dashboard";
 import Accounts from "routes/accounts";
 import Expenses from "routes/expenses";
@@ -12,20 +13,11 @@ import SalesSubscriptions from "routes/sales/subscriptions";
 import SalesInvoices from "routes/sales/invoices";
 import SalesInvoicesLayout from "routes/sales/invoices/_layout";
 import SalesInvoicesDetail from "routes/sales/invoices/detail";
-import Home from "routes/home";
-
-function SmallSpinnitLayoutRoute() {
-  return (
-    <SmallSpinnit>
-      <Outlet />
-    </SmallSpinnit>
-  );
-}
 
 export function Navigation() {
   return (
     <Routes>
-      <Route element={<SmallSpinnitLayoutRoute />}>
+      <Route element={<MainLayout />}>
         <Route element={<Home />} index />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="accounts" element={<Accounts />} />
