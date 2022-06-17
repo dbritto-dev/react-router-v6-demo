@@ -135,7 +135,6 @@ export function Navigation() {
         </Route>
         <Route path="expenses" element={<Expenses />} />
         <Route path="reports" element={<Reports />} />
-        <Route path="manifest.json" element={<Navigate to="." replace />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
