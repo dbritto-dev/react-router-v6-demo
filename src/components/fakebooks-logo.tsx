@@ -1,4 +1,8 @@
-export function FakebooksLogo({ className }: { className: string }) {
+export interface FakebooksLogoProps {
+  className: string;
+}
+
+export function FakebooksLogo({ className }: FakebooksLogoProps) {
   return (
     <svg
       className={className}
