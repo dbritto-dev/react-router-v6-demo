@@ -1,4 +1,8 @@
-export function Spinner({ className }: { className?: string }) {
+export interface SpinnerProps {
+  className?: string;
+}
+
+export function Spinner({ className }: SpinnerProps) {
   return (
     <div
       // this is silly, but it works so there you go...
