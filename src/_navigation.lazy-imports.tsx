@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import MainLayout from "routes/_layout";
 
 const Dashboard = lazy(
