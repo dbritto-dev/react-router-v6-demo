@@ -1,12 +1,10 @@
-export function LineItem({
-  label,
-  amount,
-  bold
-}: {
+export interface LineItemProps {
   label: string;
   amount: number;
   bold?: boolean;
-}) {
+}
+
+export function LineItem({ label, amount, bold }: LineItemProps) {
   return (
     <div
       className={
