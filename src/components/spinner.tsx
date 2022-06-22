@@ -8,10 +8,10 @@ export function Spinner({ className }: SpinnerProps) {
       // this is silly, but it works so there you go...
       className={`${className?.includes(" h-") ? "" : "h-full"} w-full ${
         className ?? ""
-      }`}
+      } flex items-center`}
     >
       <svg
-        className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+        className="animate-spin -ml-1 mr-3 h-8 w-8"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
