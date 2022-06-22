@@ -1,14 +1,13 @@
 import type { ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 
-export function NavItem({
-  to,
-  children
-}: {
+export interface NavItemProps {
   to: string;
-  children: ReactNode;
+  children?: ReactNode;
   className?: string;
-}) {
+}
+
+export function NavItem({ to, children }: NavItemProps) {
   return (
     <NavLink
       to={to}
