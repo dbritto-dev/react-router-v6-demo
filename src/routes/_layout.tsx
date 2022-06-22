@@ -1,4 +1,4 @@
-import { ReactNode, useEffect } from "react";
+import { useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { useQueryClient } from "react-query";
 import { NavItem } from "components/nav-item";
@@ -6,7 +6,7 @@ import { SmallSpinnit } from "components/small-spinnit";
 import { FakebooksLogo } from "components/fakebooks-logo";
 import { invoicesFetcher } from "helpers/invoices-fetcher";
 
-export default function Layout({ children }: { children?: ReactNode }) {
+export default function Layout() {
   const queryClient = useQueryClient();
 
   useEffect(() => {
