@@ -13,7 +13,7 @@ export default function SalesInvoicesDetail() {
   const { data: invoice } = useQuery(
     ["invoice", invoiceId],
     invoiceFetcher(invoiceId),
-    { suspense: true }
+    { suspense: true, enabled: !!invoiceId }
   );
 
   if (invoice === undefined) return null;
