@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { FakebooksLogo } from "./fakebooks-logo";
 import { NavItem } from "./nav-item";
 
-export function Layout({ children }: { children?: ReactNode }) {
+export interface LayoutProps {
+  children?: ReactNode;
+}
+
+export function Layout({ children }: LayoutProps) {
   return (
     <div className="relative flex h-full rounded-lg bg-white text-gray-600">
       <div className="border-r border-gray-100 bg-gray-50">
