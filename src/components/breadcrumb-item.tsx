@@ -1,14 +1,13 @@
 import type { ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 
-export function BreadcrumbItem({
-  to,
-  children
-}: {
+export interface BreadcrumbItemProps {
   to: string;
   children: ReactNode;
   className?: string;
-}) {
+}
+
+export function BreadcrumbItem({ to, children }: BreadcrumbItemProps) {
   return (
     <NavLink
       to={to}
