@@ -25,7 +25,7 @@ export function Navigation() {
           <Route element={<Sales />} index />
           <Route path="invoices" element={<SalesInvoicesLayout />}>
             <Route element={<SalesInvoices />} index />
-            <Route path=":inoviceId" element={<SalesInvoicesDetail />} />
+            <Route path=":invoiceId" element={<SalesInvoicesDetail />} />
           </Route>
           <Route path="customers" element={<SalesCustomers />} />
           <Route path="deposits" element={<SalesDeposits />} />
