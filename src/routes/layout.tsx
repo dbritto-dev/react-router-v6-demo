@@ -1,17 +1,17 @@
-import { useEffect } from "react";
-import { Link, Outlet } from "react-router-dom";
-import { useQueryClient } from "react-query";
-import { NavItem } from "components/nav-item";
-import { SmallSpinnit } from "components/small-spinnit";
-import { FakebooksLogo } from "components/fakebooks-logo";
-import { invoicesFetcher } from "helpers/invoices-fetcher";
+import { useEffect } from 'react';
+import { Link, Outlet } from 'react-router-dom';
+import { useQueryClient } from 'react-query';
+import { NavItem } from 'components/nav-item';
+import { SmallSpinnit } from 'components/small-spinnit';
+import { FakebooksLogo } from 'components/fakebooks-logo';
+import { invoicesFetcher } from 'helpers/invoices-fetcher';
 
 export default function MainLayout() {
   const queryClient = useQueryClient();
 
   useEffect(() => {
     const prefetchInvoices = async () =>
-      void (await queryClient.prefetchQuery("invoices", invoicesFetcher));
+      void (await queryClient.prefetchQuery('invoices', invoicesFetcher));
 
     prefetchInvoices();
   }, [queryClient]);

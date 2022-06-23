@@ -6,8 +6,8 @@ export function Spinner({ className }: SpinnerProps) {
   return (
     <div
       // this is silly, but it works so there you go...
-      className={`${className?.includes(" h-") ? "" : "h-full"} w-full ${
-        className ?? ""
+      className={`${className?.includes(' h-') ? '' : 'h-full'} w-full ${
+        className ?? ''
       } flex justify-center`}
     >
       <svg

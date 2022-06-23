@@ -1,4 +1,4 @@
-import { Invoice } from "models/invoices";
+import { Invoice } from 'models/invoices';
 
 export const getInvoiceTotal = (invoice: Invoice): number => {
   if (!invoice) return 0;

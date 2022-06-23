@@ -1,15 +1,15 @@
-import { NavLink } from "react-router-dom";
-import { useQuery } from "react-query";
-import { invoicesFetcher } from "helpers/invoices-fetcher";
-import { getInvoiceDueStatus } from "helpers/get-invoice-due-status";
-import { getInvoiceTotal } from "helpers/get-invoice-total";
+import { NavLink } from 'react-router-dom';
+import { useQuery } from 'react-query';
+import { invoicesFetcher } from 'helpers/invoices-fetcher';
+import { getInvoiceDueStatus } from 'helpers/get-invoice-due-status';
+import { getInvoiceTotal } from 'helpers/get-invoice-total';
 
 export interface InvoiceListProps {
   children?: React.ReactNode;
 }
 
 export function InvoiceList({ children }: InvoiceListProps) {
-  const { data: invoiceListItems } = useQuery("invoices", invoicesFetcher, {
+  const { data: invoiceListItems } = useQuery('invoices', invoicesFetcher, {
     suspense: true,
   });
 
@@ -23,9 +23,9 @@ export function InvoiceList({ children }: InvoiceListProps) {
             key={index}
             to={invoice.id}
             className={({ isActive }) =>
-              "block border-b border-gray-50 py-3 px-4 hover:bg-gray-50" +
-              " " +
-              (isActive ? "bg-gray-50" : "")
+              'block border-b border-gray-50 py-3 px-4 hover:bg-gray-50' +
+              ' ' +
+              (isActive ? 'bg-gray-50' : '')
             }
           >
             <div className="flex justify-between text-[length:14px] font-bold leading-6">
@@ -36,13 +36,13 @@ export function InvoiceList({ children }: InvoiceListProps) {
               <div>{invoice.number}</div>
               <div
                 className={
-                  "uppercase" +
-                  " " +
-                  (getInvoiceDueStatus(invoice) === "paid"
-                    ? "text-green-400"
-                    : getInvoiceDueStatus(invoice) === "overdue"
-                    ? "text-red-400"
-                    : "")
+                  'uppercase' +
+                  ' ' +
+                  (getInvoiceDueStatus(invoice) === 'paid'
+                    ? 'text-green-400'
+                    : getInvoiceDueStatus(invoice) === 'overdue'
+                    ? 'text-red-400'
+                    : '')
                 }
               >
                 {getInvoiceDueStatus(invoice)}

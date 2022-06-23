@@ -1,4 +1,4 @@
-export type DueStatus = "overdue" | "due" | "paid";
+export type DueStatus = 'overdue' | 'due' | 'paid';
 
 export interface InvoiceListItem {
   id: string;

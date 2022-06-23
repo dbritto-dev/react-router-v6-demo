@@ -1,7 +1,7 @@
-import type { ReactNode } from "react";
-import { Link } from "react-router-dom";
-import { FakebooksLogo } from "./fakebooks-logo";
-import { NavItem } from "./nav-item";
+import type { ReactNode } from 'react';
+import { Link } from 'react-router-dom';
+import { FakebooksLogo } from './fakebooks-logo';
+import { NavItem } from './nav-item';
 
 export interface LayoutProps {
   children?: ReactNode;

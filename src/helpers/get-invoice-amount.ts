@@ -1,5 +1,5 @@
-import { Invoice } from "models/invoices";
-import { getInvoiceLineItemAmount } from "./get-invoice-line-item-amount";
+import { Invoice } from 'models/invoices';
+import { getInvoiceLineItemAmount } from './get-invoice-line-item-amount';
 
 export const getInvoiceAmount = (invoice: Invoice): number => {
   if (!invoice) return 0;

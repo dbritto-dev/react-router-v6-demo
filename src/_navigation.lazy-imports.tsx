@@ -1,13 +1,13 @@
-import { lazy } from "react";
-import { Routes, Route } from "react-router-dom";
-import MainLayout from "routes/layout";
+import { lazy } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import MainLayout from 'routes/layout';
 
 const Dashboard = lazy(
   () =>
     import(
       /* webpackChunkName: "dashboard" */
       /* webpackPrefetch: true */
-      "routes/dashboard"
+      'routes/dashboard'
     )
 );
 const Accounts = lazy(
@@ -15,7 +15,7 @@ const Accounts = lazy(
     import(
       /* webpackChunkName: "accounts" */
       /* webpackPrefetch: true */
-      "routes/accounts"
+      'routes/accounts'
     )
 );
 const Expenses = lazy(
@@ -23,7 +23,7 @@ const Expenses = lazy(
     import(
       /* webpackChunkName: "expenses" */
       /* webpackPrefetch: true */
-      "routes/expenses"
+      'routes/expenses'
     )
 );
 const Reports = lazy(
@@ -31,7 +31,7 @@ const Reports = lazy(
     import(
       /* webpackChunkName: "reports" */
       /* webpackPrefetch: true */
-      "routes/reports"
+      'routes/reports'
     )
 );
 const Sales = lazy(
@@ -39,7 +39,7 @@ const Sales = lazy(
     import(
       /* webpackChunkName: "sales" */
       /* webpackPrefetch: true */
-      "routes/sales"
+      'routes/sales'
     )
 );
 const SalesLayout = lazy(
@@ -47,7 +47,7 @@ const SalesLayout = lazy(
     import(
       /* webpackChunkName: "sales-layout" */
       /* webpackPrefetch: true */
-      "routes/sales/layout"
+      'routes/sales/layout'
     )
 );
 const SalesCustomers = lazy(
@@ -55,7 +55,7 @@ const SalesCustomers = lazy(
     import(
       /* webpackChunkName: "sales-customers" */
       /* webpackPreload: true */
-      "routes/sales/customers"
+      'routes/sales/customers'
     )
 );
 const SalesDeposits = lazy(
@@ -63,7 +63,7 @@ const SalesDeposits = lazy(
     import(
       /* webpackChunkName: "sales-deposits" */
       /* webpackPrefetch: true */
-      "routes/sales/deposits"
+      'routes/sales/deposits'
     )
 );
 const SalesSubscriptions = lazy(
@@ -71,7 +71,7 @@ const SalesSubscriptions = lazy(
     import(
       /* webpackChunkName: "sales-subscriptions" */
       /* webpackPrefetch: true */
-      "routes/sales/subscriptions"
+      'routes/sales/subscriptions'
     )
 );
 const SalesInvoices = lazy(
@@ -79,7 +79,7 @@ const SalesInvoices = lazy(
     import(
       /* webpackChunkName: "sales-invoices" */
       /* webpackPrefetch: true */
-      "routes/sales/invoices"
+      'routes/sales/invoices'
     )
 );
 const SalesInvoicesLayout = lazy(
@@ -87,7 +87,7 @@ const SalesInvoicesLayout = lazy(
     import(
       /* webpackChunkName: "sales-invoices-layout" */
       /* webpackPrefetch: true */
-      "routes/sales/invoices/layout"
+      'routes/sales/invoices/layout'
     )
 );
 const SalesInvoicesDetail = lazy(
@@ -95,7 +95,7 @@ const SalesInvoicesDetail = lazy(
     import(
       /* webpackChunkName: "sales-invoices-detail" */
       /* webpackPrefetch: true */
-      "routes/sales/invoices/detail"
+      'routes/sales/invoices/detail'
     )
 );
 const Home = lazy(
@@ -103,7 +103,7 @@ const Home = lazy(
     import(
       /* webpackChunkName: "home" */
       /* webpackPrefetch: true */
-      "routes/home"
+      'routes/home'
     )
 );
 const NotFound = lazy(
@@ -111,7 +111,7 @@ const NotFound = lazy(
     import(
       /* webpackChunkName: "not-found" */
       /* webpackPrefetch: true */
-      "routes/not-found"
+      'routes/not-found'
     )
 );
 
