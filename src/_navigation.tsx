@@ -13,6 +13,7 @@ import SalesSubscriptions from 'routes/sales/subscriptions';
 import SalesInvoices from 'routes/sales/invoices';
 import SalesInvoicesLayout from 'routes/sales/invoices/layout';
 import SalesInvoicesDetail from 'routes/sales/invoices/detail';
+import Notfound from 'routes/not-found';
 
 export function Navigation() {
   return (
@@ -33,6 +34,7 @@ export function Navigation() {
         </Route>
         <Route path="expenses" element={<Expenses />} />
         <Route path="reports" element={<Reports />} />
+        <Route path="*" element={<Notfound />} />
       </Route>
     </Routes>
   );
