@@ -1,6 +1,6 @@
 import { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import MainLayout from "routes/_layout";
+import MainLayout from "routes/layout";
 
 const Dashboard = lazy(
   () =>
@@ -47,7 +47,7 @@ const SalesLayout = lazy(
     import(
       /* webpackChunkName: "sales-layout" */
       /* webpackPrefetch: true */
-      "routes/sales/_layout"
+      "routes/sales/layout"
     )
 );
 const SalesCustomers = lazy(
@@ -87,7 +87,7 @@ const SalesInvoicesLayout = lazy(
     import(
       /* webpackChunkName: "sales-invoices-layout" */
       /* webpackPrefetch: true */
-      "routes/sales/invoices/_layout"
+      "routes/sales/invoices/layout"
     )
 );
 const SalesInvoicesDetail = lazy(
