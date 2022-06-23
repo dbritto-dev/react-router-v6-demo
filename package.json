@@ -12,6 +12,7 @@
     "@types/react-dom": "18.0.5",
     "autoprefixer": "10.4.7",
     "postcss": "^8.4.14",
+    "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-error-boundary": "3.1.4",
@@ -27,7 +28,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "lint:prettier": "prettier -c src",
+    "lint:eslint": "prettier -c src",
     "eject": "react-scripts eject",
+    "format": "prettier -w src",
     "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {
