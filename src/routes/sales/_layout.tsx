@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { BreadcrumbItem } from "components/breadcrumb-item";
 import { SmallSpinnit } from "components/small-spinnit";
 
-export default function Layout() {
+export default function SalesLayout() {
   return (
     <div className="relative h-full p-10">
       <div className="font-display text-d-h3 text-black">Sales</div>

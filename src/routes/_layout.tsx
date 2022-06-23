@@ -6,7 +6,7 @@ import { SmallSpinnit } from "components/small-spinnit";
 import { FakebooksLogo } from "components/fakebooks-logo";
 import { invoicesFetcher } from "helpers/invoices-fetcher";
 
-export default function Layout() {
+export default function MainLayout() {
   const queryClient = useQueryClient();
 
   useEffect(() => {

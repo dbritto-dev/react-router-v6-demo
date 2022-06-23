@@ -8,7 +8,7 @@ import { getInvoiceTotal } from "helpers/get-invoice-total";
 import { InvoicesInfo } from "components/invoices-info";
 import { InvoiceList } from "components/invoice-list";
 
-export default function Layout() {
+export default function SalesInvoicesLayout() {
   const { data: invoiceListItems } = useQuery("invoices", invoicesFetcher, {
     suspense: true,
   });
