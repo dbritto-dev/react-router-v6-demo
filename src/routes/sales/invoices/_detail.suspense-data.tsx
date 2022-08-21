@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useQuery } from 'react-query';
+import { useQuery } from '@tanstack/react-query';
 import { LabelText } from 'components/label-text';
 import { LineItem } from 'components/line-item';
 import { invoiceFetcher } from 'helpers/invoice-fetcher';

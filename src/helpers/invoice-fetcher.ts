@@ -1,4 +1,4 @@
-import type { QueryFunction } from 'react-query';
+import type { QueryFunction } from '@tanstack/react-query';
 import { Invoice } from 'models/invoices';
 import { unfetch } from './unfetch';
 

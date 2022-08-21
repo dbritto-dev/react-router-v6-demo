@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { useQueryClient } from 'react-query';
+import { useQueryClient } from '@tanstack/react-query';
 import { NavItem } from 'components/nav-item';
 import { SmallSpinnit } from 'components/small-spinnit';
 import { FakebooksLogo } from 'components/fakebooks-logo';

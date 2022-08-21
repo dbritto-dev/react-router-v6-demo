@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { QueryClientProvider, QueryClient } from 'react-query';
-import { ReactQueryDevtools as QueryDevTools } from 'react-query/devtools';
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
+import { ReactQueryDevtools as QueryDevTools } from '@tanstack/react-query-devtools';
 import { BrowserRouter } from 'react-router-dom';
 import App from './app';
 import './index.css';

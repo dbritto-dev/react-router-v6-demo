@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { useQuery } from 'react-query';
+import { useQuery } from '@tanstack/react-query';
 import { LabelText } from 'components/label-text';
 import { SmallSpinnit } from 'components/small-spinnit';
 import { invoicesFetcher } from 'helpers/invoices-fetcher';

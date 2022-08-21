@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { useQuery, useQueryClient } from 'react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { invoicesFetcher } from 'helpers/invoices-fetcher';
 import { invoiceFetcher } from 'helpers/invoice-fetcher';
 import { getInvoiceDueStatus } from 'helpers/get-invoice-due-status';
