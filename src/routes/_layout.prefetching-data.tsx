@@ -11,7 +11,7 @@ export default function MainLayout() {
 
   useEffect(() => {
     const prefetchInvoices = async () =>
-      void (await queryClient.prefetchQuery('invoices', invoicesFetcher));
+      void (await queryClient.prefetchQuery(['invoices'], invoicesFetcher));
 
     prefetchInvoices();
   }, [queryClient]);

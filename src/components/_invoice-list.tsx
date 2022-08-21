@@ -9,7 +9,7 @@ export interface InvoiceListProps {
 }
 
 export function InvoiceList({ children }: InvoiceListProps) {
-  const { data: invoiceListItems } = useQuery('invoices', invoicesFetcher, {
+  const { data: invoiceListItems } = useQuery(['invoices'], invoicesFetcher, {
     suspense: true,
   });
 

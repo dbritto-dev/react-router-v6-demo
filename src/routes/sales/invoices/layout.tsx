@@ -9,7 +9,7 @@ import { InvoicesInfo } from 'components/invoices-info';
 import { InvoiceList } from 'components/invoice-list';
 
 export default function SalesInvoicesLayout() {
-  const { data: invoiceListItems } = useQuery('invoices', invoicesFetcher, {
+  const { data: invoiceListItems } = useQuery(['invoices'], invoicesFetcher, {
     suspense: true,
   });
 
