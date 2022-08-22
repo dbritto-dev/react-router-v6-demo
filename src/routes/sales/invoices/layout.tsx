@@ -2,14 +2,14 @@ import { Outlet } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { LabelText } from 'components/label-text';
 import { SmallSpinnit } from 'components/small-spinnit';
-import { invoicesFetcher } from 'helpers/invoices-fetcher';
+import { getInvoicesFetcherQueryKey, invoicesFetcher } from 'helpers/invoices-fetcher';
 import { getInvoiceDueStatus } from 'helpers/get-invoice-due-status';
 import { getInvoiceTotal } from 'helpers/get-invoice-total';
 import { InvoicesInfo } from 'components/invoices-info';
 import { InvoiceList } from 'components/invoice-list';
 
 export default function SalesInvoicesLayout() {
-  const { data: invoiceListItems } = useQuery(['invoices'], invoicesFetcher, {
+  const { data: invoiceListItems } = useQuery(getInvoicesFetcherQueryKey(), invoicesFetcher, {
     suspense: true,
   });
 

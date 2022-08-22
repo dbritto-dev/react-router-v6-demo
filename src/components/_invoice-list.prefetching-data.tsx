@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
-import { invoicesFetcher } from 'helpers/invoices-fetcher';
-import { invoiceFetcher } from 'helpers/invoice-fetcher';
+import { getInvoicesFetcherQueryKey, invoicesFetcher } from 'helpers/invoices-fetcher';
+import { getInvoiceFetcherQueryKey, invoiceFetcher } from 'helpers/invoice-fetcher';
 import { getInvoiceDueStatus } from 'helpers/get-invoice-due-status';
 import { getInvoiceTotal } from 'helpers/get-invoice-total';
 
@@ -11,7 +11,7 @@ export interface InvoiceListProps {
 
 export function InvoiceList({ children }: InvoiceListProps) {
   const queryClient = useQueryClient();
-  const { data: invoiceListItems } = useQuery(['invoices'], invoicesFetcher, {
+  const { data: invoiceListItems } = useQuery(getInvoicesFetcherQueryKey(), invoicesFetcher, {
     suspense: true,
   });
 
@@ -26,7 +26,7 @@ export function InvoiceList({ children }: InvoiceListProps) {
             to={invoice.id}
             onMouseEnter={async () =>
               void (await queryClient.prefetchQuery(
-                ['invoice', invoice.id],
+                getInvoiceFetcherQueryKey(invoice.id),
                 invoiceFetcher(invoice.id),
                 { staleTime: 1000 * 2 }
               ))

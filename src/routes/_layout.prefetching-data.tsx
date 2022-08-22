@@ -4,14 +4,14 @@ import { useQueryClient } from '@tanstack/react-query';
 import { NavItem } from 'components/nav-item';
 import { SmallSpinnit } from 'components/small-spinnit';
 import { FakebooksLogo } from 'components/fakebooks-logo';
-import { invoicesFetcher } from 'helpers/invoices-fetcher';
+import { getInvoicesFetcherQueryKey, invoicesFetcher } from 'helpers/invoices-fetcher';
 
 export default function MainLayout() {
   const queryClient = useQueryClient();
 
   useEffect(() => {
     const prefetchInvoices = async () =>
-      void (await queryClient.prefetchQuery(['invoices'], invoicesFetcher));
+      void (await queryClient.prefetchQuery(getInvoicesFetcherQueryKey(), invoicesFetcher));
 
     prefetchInvoices();
   }, [queryClient]);

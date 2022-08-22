@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { LabelText } from 'components/label-text';
 import { LineItem } from 'components/line-item';
-import { invoiceFetcher } from 'helpers/invoice-fetcher';
+import { getInvoiceFetcherQueryKey, invoiceFetcher } from 'helpers/invoice-fetcher';
 import { getInvoiceTotal } from 'helpers/get-invoice-total';
 import { getInvoiceDueFromNow } from 'helpers/get-invoice-due-from-now';
 import { getInvoiceDate } from 'helpers/get-invoice-date';
@@ -10,10 +10,11 @@ import { getInvoiceLineItemAmount } from 'helpers/get-invoice-line-item-amount';
 
 export default function SalesInvoicesDetail() {
   const { invoiceId = '' } = useParams<{ invoiceId: string }>();
-  const { data: invoice } = useQuery(['invoice', invoiceId], invoiceFetcher(invoiceId), {
-    suspense: true,
-    enabled: !!invoiceId,
-  });
+  const { data: invoice } = useQuery(
+    getInvoiceFetcherQueryKey(invoiceId),
+    invoiceFetcher(invoiceId),
+    { suspense: true, enabled: !!invoiceId }
+  );
 
   if (invoice === undefined) return null;
 
